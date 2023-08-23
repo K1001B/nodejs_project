@@ -15,7 +15,7 @@ export const endpoinds = {
 }
 
 export const authAPI = () => axios.create({
-    baseURL: "http://thanhduong.pythonanywhere.com/",
+    baseURL: "http://localhost:3000/",
     headers: {
         "Authorization": `Bearer ${cookie.load('access_token')}`
     }
